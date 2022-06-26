@@ -7,10 +7,10 @@ const answers = ['Tak', 'Nie', 'Lepiej nie pytaj', 'Nie chcesz znać odpowiedzi'
 
 const checkLength = () => {
 
-    if (input.value.length > 2) {
+    if (input.value !== '') {
         if (input.value.includes('?')) {
             randomAnswer();
-            addClassToImg()
+            addClassToImg();
 
             error.textContent = ''
             input.value = ''
@@ -38,10 +38,10 @@ const addClassToImg = () => {
 }
 
 const randomAnswer = () => {
-    const min = 0
-    const max = 10
 
-    answer.textContent = answers[Math.floor(Math.random() * (max - min)) + min]
+    const number = answers[Math.floor(Math.random() * 10)]
+
+    answer.innerHTML = `<span>Odpowiedź: </span> ${number}`
 
 }
 
