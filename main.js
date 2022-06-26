@@ -54,3 +54,4 @@ const keyCheck = e => {
 }
 
 input.addEventListener('keyup', keyCheck)
+ball.addEventListener('click', checkLength)
