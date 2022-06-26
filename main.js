@@ -13,6 +13,7 @@ const checkLength = () => {
             addClassToImg()
 
             error.textContent = ''
+            input.value = ''
 
         } else {
             error.textContent = 'Postaw znak zapytania'
@@ -23,7 +24,7 @@ const checkLength = () => {
         answer.textContent = ''
     }
 
-    input.value = ''
+
 }
 
 const removeClassToImg = () => {
